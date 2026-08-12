@@ -22,9 +22,10 @@ nav .cta{border:1px solid rgba(255,255,255,.6);padding:10px 14px;opacity:1;trans
 .hero{min-height:100vh;display:grid;grid-template-columns:1.02fr .98fr;background:var(--ink);color:#fff}
 .hero-copy{padding:14vh 6vw 10vh 7vw;display:flex;flex-direction:column;justify-content:center}
 .kicker{font-size:10px;letter-spacing:.18em;font-weight:700;color:#FFD400}
-.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(56px,6.3vw,100px);line-height:.84;font-weight:400;letter-spacing:-.055em;margin:38px 0 42px}
+.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(44px,4.2vw,68px);line-height:.94;font-weight:400;letter-spacing:-.055em;margin:38px 0 42px;white-space:nowrap}
 .hero h1 em{font-weight:400;color:#FFD400}
 .hero p{max-width:650px;font-size:18px;line-height:1.65;color:#c7cdd6}
+.positioning{margin-top:22px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(18px,1.45vw,23px);line-height:1.4;color:#fff}.positioning span{color:#FFD400}
 .actions{display:flex;gap:24px;align-items:center;margin-top:30px;flex-wrap:wrap}
 .btn{padding:13px 18px;background:white;color:var(--ink);font-size:11px;font-weight:700;transition:background .2s ease}
 .btn:hover{background:#FFD400}
@@ -114,6 +115,7 @@ footer .note{margin-top:28px;font-size:8px;color:#505a66;max-width:850px;line-he
 @media(max-width:900px){
  nav{display:none}
  .hero,.place,.work-feature,.feature,.journey,.global-grid{grid-template-columns:1fr}
+ .hero h1{white-space:normal}
  .hero-copy{padding:120px 7vw 75px;min-height:auto} .hero-photo{min-height:620px}
  .intro{grid-template-columns:1fr} .intro-copy{grid-template-columns:1fr}
  .priority-head{grid-template-columns:1fr}
@@ -151,8 +153,9 @@ footer .note{margin-top:28px;font-size:8px;color:#505a66;max-width:850px;line-he
 <section class="hero">
   <div class="hero-copy">
     <div class="kicker">NANSANA · UGANDA · AFRICA</div>
-    <h1>Build<br>where you<br><em>stand.</em></h1>
-    <p>Idi Matovu is a new-generation Ugandan public leader working to turn the realities of fast-growing African cities into opportunity — for young people, entrepreneurs and communities.</p>
+    <h1>Build where you <em>stand.</em></h1>
+    <p>Idi Matovu believes the future of Uganda will be built from places like Nansana — fast-growing communities where young people, entrepreneurs and families are already creating the next chapter of the country. His vision is to make Nansana a model of what local leadership can achieve: expanding opportunity, strengthening enterprise, improving the urban experience and building institutions people can trust.</p>
+    <div class="positioning">Rooted in <span>Nansana.</span> Built for <span>Uganda.</span> Relevant to <span>Africa.</span></div>
     <div class="actions"><a class="btn" href="#about">Meet Idi Matovu</a><a class="textlink" href="#connect">60-second introduction ↗</a></div>
     <div class="hero-meta"><div><small>ROOTED IN</small><b>Nansana</b></div><div><small>SERVING</small><b>Uganda</b></div><div><small>ENGAGING</small><b>Africa &amp; the Global South</b></div></div>
   </div>
