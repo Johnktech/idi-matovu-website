@@ -116,25 +116,21 @@ nav .cta{border:1px solid rgba(255,255,255,.6);padding:10px 14px;opacity:1;trans
 .global .topline{color:#FFD400}
 .global h2{font-size:clamp(44px,4.2vw,68px);line-height:1.02;margin:24px 0 54px;white-space:nowrap} .global h2 em{font-weight:400;color:#FFD400}
 .global-grid{display:block}
-.global-copy{max-width:960px}
+.global-copy{max-width:1280px}
 .global-copy p{font-size:15px;line-height:1.78;color:#c0c6cf;margin:0}
-.global-lead{max-width:860px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(19px,1.55vw,24px)!important;line-height:1.5!important;color:#fff!important;margin-bottom:64px!important}
-.global-editorial{display:block;max-width:900px}
-.global-column p{margin:0 0 22px}
-.global-data{margin:42px 0;border-top:1px solid #56606d;border-bottom:1px solid #303947;padding:24px 0 20px}
-.global-data h3{margin:0 0 24px;font-size:9px;line-height:1.4;letter-spacing:.17em;color:#FFD400}
-.data-stat{display:grid;grid-template-columns:105px minmax(0,520px);gap:20px;align-items:baseline;margin:0 0 15px}
-.data-stat strong{font-family:Georgia,'Times New Roman',serif;font-size:22px;line-height:1;font-weight:400;color:#fff}
-.data-stat span{display:block;font-size:11px;line-height:1.5;color:#aeb7c2}
-.data-bars{max-width:640px;margin:22px 0 14px}
-.data-bar{display:grid;grid-template-columns:105px 1fr;gap:20px;align-items:center;margin:10px 0}
-.data-bar span{font-size:8px;line-height:1.35;color:#929ba7}
-.data-bar i{display:block;height:5px;background:#FFD400}
-.data-bar.wage i{width:12.5%;background:#fff}
+.global-lead{max-width:900px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(19px,1.55vw,24px)!important;line-height:1.5!important;color:#fff!important;margin-bottom:48px!important}
+.global-data{display:grid;grid-template-columns:repeat(4,1fr);margin:0 0 10px;border-top:1px solid #56606d;border-bottom:1px solid #303947;padding:28px 0}
+.data-stat{padding:0 28px;border-left:1px solid #303947}
+.data-stat:first-child{padding-left:0;border-left:0}
+.data-stat:last-child{padding-right:0}
+.data-stat strong{display:block;margin-bottom:9px;font-family:Georgia,'Times New Roman',serif;font-size:clamp(25px,2.3vw,36px);line-height:1;font-weight:400;color:#FFD400}
+.data-stat span{display:block;max-width:220px;font-size:11px;line-height:1.5;color:#aeb7c2}
 .data-source{font-size:8px!important;line-height:1.5!important;color:#737d89!important}
-.global-closing{max-width:860px;margin:60px 0 0!important;font-family:Georgia,'Times New Roman',serif;font-size:clamp(21px,2vw,30px)!important;line-height:1.35!important;color:#fff!important}
+.global-columns{display:grid;grid-template-columns:1fr 1fr;gap:7vw;max-width:1100px;margin-top:58px}
+.global-columns p{max-width:520px}
+.global-closing{max-width:980px;margin:64px 0 0!important;font-family:Georgia,'Times New Roman',serif;font-size:clamp(24px,2.4vw,38px)!important;line-height:1.3!important;color:#fff!important}
 .global-closing em{font-weight:400;color:#FFD400}
-.global-return{display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:900px;margin-top:50px;padding:20px 0;border-top:1px solid #303947;font-size:9px;line-height:1.4;letter-spacing:.14em;font-weight:700;color:#89939f}
+.global-return{display:flex;align-items:center;justify-content:space-between;gap:18px;max-width:900px;margin-top:48px;padding:18px 0 0;border-top:1px solid #303947;font-size:9px;line-height:1.4;letter-spacing:.14em;font-weight:700;color:#89939f}
 .global-return i{font-style:normal;color:#FFD400}.global-return strong{color:#FFD400;font-weight:700}
 .global-photo{display:none}
 .contact{display:grid;grid-template-columns:1fr 360px;gap:80px;align-items:center;background:#101a2a;color:white;padding:100px 7vw}
@@ -155,7 +151,7 @@ footer .note{margin-top:28px;font-size:8px;color:#505a66;max-width:850px;line-he
  .intro{grid-template-columns:1fr} .intro-copy{grid-template-columns:1fr}
  .leadership-columns{grid-template-columns:1fr;gap:28px}.leadership-method{justify-content:flex-start;flex-wrap:wrap}
  .work h2,.ideas h2,.global h2{white-space:normal}
- .global-editorial{grid-template-columns:1fr}.global-data{max-width:620px}.global-return{justify-content:flex-start;flex-wrap:wrap}
+ .global-data{grid-template-columns:1fr 1fr}.data-stat{padding:24px;border-top:1px solid #303947}.data-stat:nth-child(odd){padding-left:0;border-left:0}.data-stat:nth-child(-n+2){border-top:0}.global-columns{grid-template-columns:1fr;gap:28px}.global-return{justify-content:flex-start;flex-wrap:wrap}
  .priority-head{grid-template-columns:1fr}
  .priority{grid-template-columns:50px 1fr} .priority .tag{grid-column:2;text-align:left}
  .cards{grid-template-columns:1fr}
@@ -173,8 +169,7 @@ footer .note{margin-top:28px;font-size:8px;color:#505a66;max-width:850px;line-he
  .work-copy,.feature-copy{padding:32px 22px} .work-copy h3,.feature-copy h3{font-size:39px}
  .essay{grid-template-columns:32px 1fr} .essay small{display:none} .essay b{font-size:21px}
  .journey-copy{padding:78px 22px} .timeline div{grid-template-columns:55px 1fr} .timeline p{grid-column:2}
- .global h2{font-size:44px}.global-lead{margin-bottom:52px!important}.global-editorial{gap:0}.global-closing{margin-top:54px!important}.global-return{margin-top:48px}
- .data-stat,.data-bar{grid-template-columns:1fr;gap:7px}
+ .global h2{font-size:44px}.global-lead{margin-bottom:40px!important}.global-data{grid-template-columns:1fr}.data-stat,.data-stat:nth-child(odd){padding:22px 0;border-left:0;border-top:1px solid #303947}.data-stat:first-child{border-top:0}.global-columns{margin-top:44px}.global-closing{margin-top:48px!important}.global-return{margin-top:42px}
  .contact{padding:78px 22px}
  footer{padding:48px 22px 22px} footer .line{flex-direction:column;gap:8px}
 }
@@ -288,37 +283,17 @@ footer .note{margin-top:28px;font-size:8px;color:#505a66;max-width:850px;line-he
   <h2>Rooted locally. <em>Engaged globally.</em></h2>
   <div class="global-grid">
     <div class="global-copy">
-      <p class="global-lead">The questions confronting Nansana are not only Nansana’s questions. They are among the defining questions of the Global South.</p>
-      <div class="global-editorial">
-        <div class="global-column">
-          <p>Across Africa, a young and rapidly growing population is colliding with a changing world of work. Cities are expanding faster than infrastructure can always follow. Technology is changing how people learn, trade, work and access government. Climate pressures increasingly affect food systems, migration, infrastructure and household livelihoods. Small and informal businesses remain the economic reality for millions of people, even as governments search for pathways toward higher productivity, better jobs and more resilient economies.</p>
-          <p>Uganda sits at the center of many of these transformations. Between 600,000 and 700,000 young Ugandans enter the labor market each year. Creating enough productive opportunities for them is not simply an employment challenge; it is a question about the kind of economy, cities and institutions Uganda is building for the next generation.</p>
-          <p>Urbanization adds another dimension. Uganda’s urban population is projected to more than double over the next two decades. Done well, that transformation can connect people to markets, jobs, education, infrastructure and opportunity. Done poorly, rapid growth can deepen congestion, informality, inadequate services and inequality.</p>
-          <p>Nansana is therefore more than the place from which Idi Matovu comes. It is a window into a much larger transformation.</p>
-          <p>The trader trying to turn a small enterprise into a sustainable business is part of Africa’s productivity challenge. The young graduate searching for a first opportunity is part of the continent’s employment challenge. The family navigating transport, housing, drainage and public services is living the reality of African urbanization. And the local government trying to respond with limited resources is confronting one of the central questions of twenty-first-century governance: how do institutions keep pace with the societies they serve?</p>
-        </div>
-        <div class="global-column">
-          <aside class="global-data" aria-label="The scale of the opportunity">
-            <h3>THE SCALE OF THE OPPORTUNITY</h3>
-            <div class="data-stat"><strong>600K–700K</strong><span>Young Ugandans entering the labor market each year</span></div>
-            <div class="data-stat"><strong>~8 million</strong><span>Young people entering the labor market annually across Eastern &amp; Southern Africa</span></div>
-            <div class="data-stat"><strong>&lt;1 million</strong><span>Securing wage jobs annually across Eastern &amp; Southern Africa</span></div>
-            <div class="data-stat"><strong>2×+</strong><span>Uganda’s urban population projected to more than double over the next two decades</span></div>
-            <div class="data-bars" aria-label="Approximately 8 million labor-market entrants compared with fewer than 1 million wage jobs annually">
-              <div class="data-bar"><span>Entrants</span><i style="width:100%"></i></div>
-              <div class="data-bar wage"><span>Wage jobs</span><i></i></div>
-            </div>
-            <p class="data-source">Source: World Bank, 2026</p>
-          </aside>
-          <p>These are local questions. But they are also global development questions.</p>
-          <p>That is where Idi’s international engagement should begin.</p>
-          <p>Not with prestige. With relevance.</p>
-          <p>The purpose of engaging internationally should not be to accumulate photographs from conferences or proximity to powerful institutions. It should be to connect local problems with global knowledge, partnerships, capital and ideas — and then bring something useful home.</p>
-          <p>A conversation about youth employment should eventually mean better pathways between skills and opportunity in Nansana. A conversation about urban development should help inform how growing communities think about mobility, markets, infrastructure and public space. A relationship with a university should create possibilities for research, training or exchange. Engagement with businesses and investors should help expose local entrepreneurs to markets, expertise and capital.</p>
-          <p>And the exchange should work in both directions.</p>
-          <p>Nansana should not appear in international conversations merely as a community waiting for solutions from elsewhere. Its entrepreneurs, young people, community organizations and public institutions are already adapting to rapid change. Their experiences can contribute to how the world understands informal enterprise, urbanization, youth opportunity and local governance in the Global South.</p>
-          <p>That is the international proposition behind Idi Matovu’s leadership: build credibility through work at home, use that credibility to participate in larger conversations, and turn those relationships back into opportunity at home.</p>
-        </div>
+      <p class="global-lead">The questions confronting Nansana are not only local questions. Youth employment, rapid urban growth, informal enterprise, technology and pressure on public services are shaping communities across Uganda and much of the Global South.</p>
+      <div class="global-data" aria-label="Regional labor market and urbanization data">
+        <div class="data-stat"><strong>600K–700K</strong><span>Young Ugandans entering the labor market each year</span></div>
+        <div class="data-stat"><strong>~8 million</strong><span>Young people entering the labor market annually across Eastern &amp; Southern Africa</span></div>
+        <div class="data-stat"><strong>&lt;1 million</strong><span>Securing wage jobs annually across Eastern &amp; Southern Africa</span></div>
+        <div class="data-stat"><strong>2×+</strong><span>Uganda’s urban population projected to more than double over the next two decades</span></div>
+      </div>
+      <p class="data-source">Source: World Bank, 2026</p>
+      <div class="global-columns">
+        <p>For Idi Matovu, international engagement should be about relevance, not prestige. The purpose is to connect the realities of communities like Nansana with useful ideas, institutions, partnerships and opportunities — and to bring that value back home.</p>
+        <p>Nansana should not appear in global conversations only as a place waiting for solutions. Its entrepreneurs, young people and communities are already adapting to rapid change. Their experience can contribute to how Africa and the wider world understand urbanization, enterprise, youth opportunity and local governance.</p>
       </div>
       <p class="global-closing">Nansana can learn from the world. <em>The world can also learn from Nansana.</em></p>
       <div class="global-return" aria-label="International engagement returns value home"><span>NANSANA</span><i>→</i><span>UGANDA</span><i>→</i><span>AFRICA</span><i>→</i><span>WORLD</span><i>→</i><strong>NANSANA</strong></div>
